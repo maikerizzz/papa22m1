@@ -248,6 +248,7 @@ nav{
 }
 .slider{
     background: url(./img/bg.png);
+     overflow: hidden;
 }
 
 .sliderwrapper{
