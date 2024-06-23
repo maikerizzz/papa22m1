@@ -322,7 +322,7 @@ form img{
     position: relative;
     width: 200%;
     margin-top: 10px;
-     overflow: hidden;
+    overflow: hidden;
 }
 .containers .contactform form .inputbox input,
 .containers .contactform form .inputbox textarea{
