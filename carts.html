@@ -1,0 +1,79 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equip="X-UA-Compatible" content="IE-edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="style2.css">
+  <title>Cart</title>
+
+  <link rel="stylesheet"
+  href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+  <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+    rel="stylesheet"/>
+</head>
+<body>
+  <nav>
+    <div class="navTop">
+      <div class="navItem">
+      <img src="./img/logo.png" width="50" height="50" alt="">
+    </div>
+    <div class="navItem">
+      <div class="menuIconContainer">
+          <i class='bx bx-menu menuIcon'></i>
+      </div>
+      <ul class="navlist hidden">
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="sale.html">Sale</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+      </ul>
+  </div>
+    <div class="nav-right">
+      <a class="carts" href="carts.html"><i class="ri-shopping-cart-line"></i></a>
+      <a href="login.html"><i class="ri-user-line"></i></a>
+      <a href="index.html"><i class="ri-home-3-line"></i></a>
+      <div class="bx bx-menu" id="menu-icon"></div>
+    </div>
+    <div class="navItem">
+      <div class="searchIconContainer">
+          <i class='bx bx-search searchIcon'></i>
+      </div>
+      <div class="search hidden">
+          <input type="text" placeholder="Search..." class="searchInput">
+      </div>
+  </div>
+    <div class="navItem">
+      <span class="name">Z-Commerce</span>
+  </div>
+    </div>
+  </nav>
+  <section>
+    <div class="heads">
+      <p class="logos">- CART -</p>
+      <div class="cart"><i class='bx bxs-cart'></i><p id="counter"></p></div>
+    </div>
+    <div class="cons">
+      <div id="root"></div>
+      <div class="sideb">
+        <div class="ulo"><p>My Cart</p></div>
+        <div id="cartitem">Your Cart is Empty</div>
+        <div class="foot">
+          <h3>total</h3>
+          <h2 id="total">$ 0.00</h2>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div>
+      <p>Designed by PAPA,JOHN MICHAEL-BSCS-22M1</br>for ICT-008 FINAL PROJECT</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

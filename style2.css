@@ -1,0 +1,531 @@
+@font-face {
+    font-family: 'Montserrat-Bold';
+    src: url('Fonts/Montserrat-Bold.ttf');
+}
+@font-face {
+    font-family: 'Montserrat-Regular';
+    src: url('Fonts/Montserrat-Regular.ttf');
+}
+@font-face {
+    font-family: 'Montserrat-SemiBold';
+    src: url('Fonts/Montserrat-SemiBold.ttf');
+}
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: 'Poppins', sans-serif;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(29, 63, 61);
+}
+.login_page{
+    width: 500px;
+    height: 400px;
+    background-color: rgb(143, 179, 179);
+    border-radius: 10px;
+    display: flex;
+    position: relative;
+}
+.page_left_sec{
+    width: 42%;
+    height: 100%;
+    background-color: black;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 3px solid lightseagreen;
+}
+.sign_in_title{
+    font-family: 'Montserrat-Bold';
+    font-size: 20px;
+    line-height: 50px;
+    color: aqua;
+    padding-bottom: 16px;
+}
+.sign_in_p{
+    font-family: 'Montserrat-Regular';
+    font-size: 20px;
+    line-height: 30px;
+    color: aqua;
+    padding-bottom: 40px;
+    text-align: center;
+}
+button.sign_in{
+    width: 75px;
+    height: 40px;
+    border: 2px solid lightseagreen;
+    border-radius: 10px;
+    background-color: lightseagreen;
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+button.sign_in:hover{
+    transform: translateY(-1px) scale(1.1);
+    color: rgb(100, 243, 236);
+    background-color: #000;
+}
+button.signup:hover{
+    transform: translateY(-1px) scale(1.1);
+    color: black;
+    background-color: rgb(100, 243, 236);
+    border-color: black;
+}
+.page_right_sec{
+    width: 58%;
+    height: 100%;
+    image-orientation: 50%;
+    background-color: lightseagreen;
+    border: 2px solid black;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    background-image: url(./img/bg2.jpeg);
+    background-size: 150%;
+}
+.account_title{
+    font-family:'Montserrat-Bold';
+    font-size: 30px;
+    line-height: 40px;
+    color: #000;
+    padding-bottom: 40px;
+}
+.account_para{ 
+    font-family: 'Montserrat-Bold';
+    font-size: 20px;
+    color: #000;
+    text-align: center;
+    text-transform: capitalize;
+}
+.mediaName{
+    padding-top: 1px;
+}
+.social-media{
+    display: flex;
+    gap: 15px;
+}
+.social-media-icon{
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+form input{
+    width: 110px;
+    height: 25px;
+    background-color: lightseagreen;
+    border: 2px solid black;
+    color: black;
+    border-radius: 5px  ;
+}
+.mediaName::placeholder{
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+button.signup{
+    width: 110px;
+    height: 45px;
+    border-radius: 10px;
+    background-color: black;
+    cursor: pointer;
+    font-family: 'Montserrat-SemiBold';
+    color: lightseagreen;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: 2px solid lightseagreen;
+    margin: 20px auto 0px;
+}
+form img{
+    position: relative;
+    left: 1px;
+    top: 4px;
+}
+.contact{
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: lightseagreen;
+}
+.content{
+    min-width: 800px;
+    text-align: center;
+}
+.content h2{
+    font-size: 3em;
+}
+.content p{
+    font-size: 1.1em;
+    font-weight: 300;
+}
+.containers{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-top: 30px;
+}
+.containers .contactinfo{
+    width: 750px;
+    display: flex;
+    flex-direction: column;
+}
+.containers .contactinfo .box{
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+    cursor: pointer;
+}
+.containers .contactinfo .box .iconer{
+    position: relative;
+    min-width: 60px;
+    height: 60px;
+    background: repeating-conic-gradient(from 27.5deg,#01dbc2 0, #01dbc2 10%, transparent 10%, transparent 50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.containers .contactinfo .box .iconer::before{
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: repeating-conic-gradient(from 117.5deg,#01dbc2 0, #01dbc2 10%, transparent 10%, transparent 50%);
+}
+.containers .contactinfo .box .iconer::after{
+    content: '';
+    position: absolute;
+    inset: 2px;
+    background-color: #222;
+}
+.containers .contactinfo .box .iconer b{
+    position: absolute;
+    inset: 8px;
+    background-color:#01dbc2;
+    z-index: 2;
+}
+.containers .contactinfo .box .iconer i{
+    position: relative;
+    z-index: 1000;
+    counter-reset: #333;
+    font-size: 1.25em;
+}
+.containers .contactinfo .box .textt{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+.containers .contactinfo .box .textt h3{
+    font-weight: 500;
+    color: #01dbc2;
+}
+.containers .contactinfo .txxt{
+    margin-top: 50px;
+    font-weight: 500;
+    border-left: 50px solid #01dbc2;
+    padding-left: 10px;
+    line-height: 1em;
+    font-size: 30px;
+}
+.containers .contactinfo .sci{
+    position: relative;
+    display: flex;
+    gap: 30px;
+    margin: 20px 0;
+}
+.containers .contactinfo .sci li{
+    list-style: none;
+}
+.containers .contactinfo .sci li a i{
+    color: lightseagreen;
+}
+.containers .contactinfo .sci li a:hover{
+    color: #01dbc2;
+    filter: drop-shadow(0 0 5px #01dbc2);
+}
+.containers .contactform{
+    position: relative;
+    width: 75%;
+    background: repeating-conic-gradient(from var(--a),#01dbc2 0, #01dbc2 10%, transparent 10%, transparent 50%);
+    animation: animate 6s linear infinite;
+    padding: 60px;
+}
+.containers .contactform::before{
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: repeating-conic-gradient(from var(--a),#01dbc2 0, #01dbc2 10%, transparent 10%, transparent 50%);
+    animation: animate 6s linear infinite;
+    animation-delay: -1.5s;
+}
+.containers .contactform::after{
+    content: '';
+    position: absolute;
+    inset: 2px;
+    border: 20px solid #222;
+    background-color: black;
+}
+@property --a{
+    syntax: '<angle>';
+    inherits: false;
+    initial-value: 0deg;
+}
+@keyframes animate
+{
+    0%
+    {
+        --a: 0deg;
+    }
+    100%
+    {
+        --a: 360deg;
+    }
+}
+.containers .contactform form{
+    position: relative;
+    z-index: 10;
+}
+.containers .contactform form h2{
+    font-size: 2em;
+    font-weight: 500;
+}
+.containers .contactform form .inputbox{
+    position: relative;
+    width: 200%;
+    margin-top: 10px;
+}
+.containers .contactform form .inputbox input,
+.containers .contactform form .inputbox textarea{
+    width: 50%;
+    padding: 5px 0;
+    font-size: 1.1em;
+    margin: 10px 0;
+    border: none;
+    background: transparent;
+    border-bottom: 2px solid #01dbc2;
+    outline: none;
+    resize: none;
+}
+.containers .contactform form .inputbox span{
+    position: absolute;
+    left: 0;
+    pointer-events: none;
+    padding: 5px 0;
+    margin: 10px 0;
+    font-size: 1.1em;
+    color: lightseagreen;
+    transition: 0.5s;
+}
+.containers .contactform form .inputbox input:focus ~ span,
+.containers .contactform form .inputbox textarea:focus ~ span,
+.containers .contactform form .inputbox input:valid ~ span,
+.containers .contactform form .inputbox textarea:valid ~ span{
+    color: aqua;
+    font-size: 0.9em;
+    transform: translate(-24px);
+}
+.containers .contactform form .inputbox input[type="submit"]{
+    color: black;
+    background-color: lightseagreen;
+    border: none;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: 500;
+}
+@media all and (max-width: 800px){
+    .contact{
+        padding: auto;
+    }
+    .containers{
+        flex-direction: column;
+    }
+    .containers .contactinfo,
+    .containers .contactform{
+        width: 100%;
+    }
+    .containers .contactform{
+        padding: 20px;
+    }
+    .containers .contactform form{
+        padding: 10px;
+    }
+}
+.heads{
+    height: 80px;
+    width: 100%;
+    background-color: black;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    border-bottom: 2px solid lightseagreen;
+}
+.heads .logos{
+    font-size: 30px;
+    font-weight: bold;
+    color: lightseagreen;
+    padding-left: 250px;
+}
+.bx bxs-cart{
+    color: black;
+    font-size: 25px;
+}
+.cart{
+    display: flex;
+    background-color: lightseagreen;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7px 10px;
+    border-radius: 3px;
+    width: 80px;
+}
+.cart p{
+    height: 22px;
+    width: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: black;
+}
+.cons{
+    display: flex;
+
+}
+#root{
+    width: 60%;
+    display: grid;
+    grid-template-columns:repeat(2,1fr);
+    grid-gap: 20px;
+}
+.sideb{
+    width: 40%;
+    border-radius: 5px;
+    background-color: black;
+    padding: 20px;
+    text-align: center;
+    color: lightseagreen;
+}
+.ulo{
+    background-color: lightseagreen;
+    border-radius: 3px;
+    height: 40px;
+    padding: 10px;
+    margin-bottom: 20px;
+    color: black;
+    display: flex;
+    align-items: center;
+}
+.foot{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0px;
+    border-top: 1px solid lightseagreen;
+}
+.boxx{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid lightseagreen;
+    border-radius: 3px;
+    padding: 10px;
+    background-color: black;
+}
+.img-box{
+    width: 100%;
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.images{
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: cover;
+    object-position: center;
+    border: 2px solid lightseagreen;
+}
+.bottom{
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 110px;
+}
+.bottom p{
+    color: lightseagreen;
+}
+.bottom h2{
+    font-size: 20px;
+    color: lightgreen;
+}
+.bottom button{
+    width: 100%;
+    position: relative;
+    border: 2px solid lightseagreen;
+    padding: 7px 25px;
+    cursor: pointer;
+    color: black;
+}
+.bottom button:hover{
+    background-color: aqua;
+}
+.cart-item{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: rgb(36, 90, 87);
+    border-bottom: 1px solid lightgreen;
+    border-radius: 3px;
+}
+.row-img{
+    display: flex;
+    text-align: center;
+    grid-template-columns: 70px 150px 50px 1fr;
+    height: 50px;
+    border-radius: 50px;
+    align-items: center;
+    justify-content: center;
+}
+.rowimg{
+    max-height: 43px;
+    border-radius: 50%;
+}
+.bx bxs-trash:hover{
+    cursor: pointer;
+    color: black;
+}

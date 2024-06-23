@@ -1,0 +1,99 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log-in</title>
+    <link rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+    rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <div class="navTop">
+      <div class="navItem">
+      <img src="./img/logo.png" width="50" height="50" alt="">
+    </div>
+    <div class="navItem">
+      <div class="menuIconContainer">
+          <i class='bx bx-menu menuIcon'></i>
+      </div>
+      <ul class="navlist hidden">
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="sale.html">Sale</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+      </ul>
+  </div>
+    <div class="nav-right">
+      <a href="carts.html"><i class="ri-shopping-cart-line"></i></a>
+      <a class="login" href="login.html"><i class="ri-user-line"></i></a>
+      <a href="index.html"><i class="ri-home-3-line"></i></a>
+      <div class="bx bx-menu" id="menu-icon"></div>
+    </div>
+    <div class="navItem">
+      <div class="searchIconContainer">
+          <i class='bx bx-search searchIcon'></i>
+      </div>
+      <div class="search hidden">
+          <input type="text" placeholder="Search..." class="searchInput">
+      </div>
+  </div>
+    <div class="navItem">
+      <span class="name">Z-Commerce</span>
+  </div>
+    </div>
+  </nav>
+    <section class="container">
+        <div class="login_page">
+            <div class="page_left_sec">
+                <p class="sign_in_p">Already have an Account??</p>
+                <div class="sign_in_title"> Log-in Here!!</div>
+                <a href="signin.html"><button class="sign_in">Log in</button></a>
+            </div>
+            <div class="page_right_sec">
+             <div class="account_title">CREATE ACCOUNT</div>
+            <div class="social-media">
+                <div class="social-media-icon">
+                    <img src="./img/fb1.jpeg" width="20px" alt="Facebook">
+                </div>
+                <div class="social-media-icon">
+                    <img src="./img/x1.jpeg" width="20px" alt="X">
+                </div>
+                <div class="social-media-icon">
+                    <img src="./img/th.jpeg" width="20px" alt="Instagram">
+                </div>
+            </div>
+            <div class="account_para">or use email for registration</div>
+              <form action="#">
+                <div class="names">
+                    <img src="./img/users.jpeg" width="20px" height="20" alt="user">
+                    <input type="text" placeholder="Username" class="mediaName">
+                </div>
+                <div class="email">
+                    <img src="./img/mail.jpeg" width="20px" height="20" alt="mail">
+                    <input type="email" placeholder="Email"  class="mediaName">
+                </div>
+                <div class="password">
+                    <img src="./img/lock.jpeg" width="20px" height="20" alt="lock"> 
+                    <input type="password" placeholder="Password"  class="mediaName">
+                </div>
+                <button class="signup">Sign up</button>
+              </form>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div>
+          <p>Designed by PAPA,JOHN MICHAEL-BSCS-22M1</br>for ICT-008 FINAL PROJECT</p>
+        </div>
+      </footer>
+      <script src="script.js"></script>
+</body>
+</html>
